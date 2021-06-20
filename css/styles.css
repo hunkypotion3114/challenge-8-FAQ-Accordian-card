@@ -1,0 +1,208 @@
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: hsl(240, 6%, 50%);
+}
+
+h2:hover,h3:hover,h4:hover,h5:hover,h6:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+p{
+    font-size: 13px;
+    color: hsl(240, 6%, 50%);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    color: white;
+}
+
+/* HEADING */
+
+.heading{
+    color: hsl(238, 29%, 16%);
+    padding-bottom: 20px;
+}
+
+
+/* CONTAINER CSS */
+
+.main-container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px 0 rgba(19, 16, 16, 0.2), 0 16px 30px 0 rgba(0,0,0,0.19);
+}
+
+.FAQ-container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 5px;
+    min-height: 530px;
+    gap: 15px;
+}
+
+.image-container{
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* FAQ CONTAINER CSS */
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: start;
+    gap: 15px;
+    padding-right: 30px;
+}
+
+/* INDIVIDUAL FAQ */
+
+.FAQ-1,.FAQ-2,.FAQ-3,.FAQ-4,.FAQ-5{
+    position: relative;
+}
+
+.FAQ-1-Ans,.FAQ-2-Ans,.FAQ-3-Ans,.FAQ-4-Ans,.FAQ-5-Ans{
+    display: none; 
+}
+
+.arrow{
+    position: absolute;
+    right:0;
+    color:hsl(14, 88%, 65%);
+}
+
+/*RESPONSIVE LINE-BREAK */
+
+ .res-line{ 
+    display: inline;
+}
+
+/* JAVASCRIPT ACTIONS */
+
+.FAQ-Question-onclick{
+    color: hsl(238, 29%, 16%)
+}
+
+.FAQ-ans-display{
+    display: block;
+}
+
+.arrow-up{
+    transform: rotate(180deg);
+}
+ 
+/* IMAGE CONTAINER CSS */
+
+.bg-image{
+    position: absolute;
+    width: 100%;
+    left: -15.7%;
+}
+
+.woman-online{
+    position: absolute;
+    width: 100%;
+    left: -15.7%;
+    top: 4.8%;
+} 
+.box-img{
+    width: 33%;
+    position: absolute;
+    top: 38%;
+    left: -8%;
+} 
+
+/* For tablet and smaller */
+
+@media screen and (max-width:992px) {
+    .res-line{
+        display: block;
+    }
+    
+    .image-container{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bg-image{
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        left: -10%;        
+    }
+
+    .box-img{
+        position: absolute;
+        top: 37%;
+        left: -2%;
+        width: 32%;
+    }
+
+    .woman-online{
+        position: absolute;
+        top: 15%;
+        left: -10%;
+    }
+    
+}
+/* for mobile */
+
+@media screen and (max-width: 768px) {
+    body{
+        margin-top: 50px;
+    }
+
+    .FAQ-container{
+        padding-top: 100px;
+    }
+
+    .image-container{
+        height: 50px;
+        text-align: center;
+        position: relative;
+        overflow: visible;
+    }
+
+    .heading{
+        text-align: center;
+    }
+     
+    .bg-image{
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        width: 50%;
+    }
+
+    .woman-online{
+        width: 60%;
+        top: -195%;
+        left: 20%;
+        position: absolute;
+    }
+    
+    .box-img{
+        position: absolute;
+        width: 20%;
+        left: 20%;
+        top: 0%;
+    }
+}

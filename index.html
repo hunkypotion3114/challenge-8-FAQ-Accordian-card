@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FA -->
+  <script src="https://kit.fontawesome.com/8f861d31b7.js" crossorigin="anonymous"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+ 
+  <div class="main-container row col-lg-10 col-md-11 col-s-10 mx-auto">    
+    <div class="image-container col-lg-6 col-md-5">
+      <picture>
+        <source srcset="css/bg-images/bg-pattern-mobile.svg"
+                media="(max-width: 768px)">
+        <img class="bg-image" src="css/bg-images/bg-pattern-desktop.svg" alt="background" />
+      </picture>
+      <img class="woman-online m-auto" src="images/illustration-woman-online-desktop.svg" alt="woman-online">
+      <img class="box-img" src="images/illustration-box-desktop.svg" alt="box-img">
+    </div>
+    <div class="FAQ-container col-lg-6 col-md-7">
+      <h1 class="heading">FAQ</h2>
+        <div class="FAQ col-s-8">
+          <div class="FAQ-1-container">
+            <div class="FAQ-1">
+              <a onclick="displayAnswer(1)">
+                <h5 class="FAQ-1-question">How many team members can I invite?
+                  <i class="fas fa-angle-down arrow arrow-1"></i>    </h5>
+              </a>
+            </div>
+            <div class="FAQ-1-Ans">
+              <p class="FAQ-answer">You can invite up to 2 additional users on the Free plan. <span class="res-line">There is no limit on
+                team members for the Premium plan.</span></p>
+            </div>
+            <hr>
+          </div>
+          <div class="FAQ-2-container">
+            <div class="FAQ-2">
+              <a onclick="displayAnswer(2)">
+                <h5 class="FAQ-2-question">What is the maximum file upload size?
+                  <i class="fas fa-angle-down arrow arrow-2"></i>
+                </h5>
+              </a>
+            </div>
+            <div class="FAQ-2-Ans">
+              <p class="FAQ-answer "> No more than 2GB. 
+                <span class="res-line">All files in your account must fit your allotted storage space.</span>
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="FAQ-3-container">
+            <div class="FAQ-3">
+              <a onclick="displayAnswer(3)">
+                <h5 class="FAQ-3-question">How do I reset my password?
+                  <i class="fas fa-angle-down arrow arrow-3"></i>
+                </h5>
+              </a>
+            </div>
+            <div class="FAQ-3-Ans">
+              <p class="FAQ-answer">Click “Forgot password” from the login page <span class="res-line">or “Change password” from your profile
+                page.
+                <span class="res-line">Reset link will be emailed to you.</span> </span></p>
+            </div>
+            <hr>
+          </div>
+          <div class="FAQ-4-container">
+            <div class="FAQ-4">
+              <a onclick="displayAnswer(4)">
+                <h5 class="FAQ-4-question">Can I cancel my subscription?
+                  <i class="fas fa-angle-down arrow arrow-4"></i>       
+                  </h5>
+                </a>
+            </div>
+            <div class="FAQ-4-Ans">
+              <p class="FAQ-answer">Yes! Send us a message and we’ll process your request <span class="res-line">no questions asked.</span></p>
+            </div>
+            <hr>
+          </div>
+          <div class="FAQ-5-container">
+            <div class="FAQ-5">
+              <a onclick="displayAnswer(5)">
+                <h5 class="FAQ-5-question">Do you provide additional support?
+                  <i class="fas fa-angle-down arrow arrow-5"></i>
+                </h5>
+              </a>
+            </div>
+            <div class="FAQ-5-Ans">
+              <p class="FAQ-answer">Chat and email support is available 24/7. <span class="res-line">Phone lines are open during normal
+                business hours.</span></p>
+            </div>
+            <hr>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Himanshu Udupi</a>.
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
